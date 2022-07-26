@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>novel</title>
+    <meta charset="UTF-8">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hana.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Murecho:wght@100&family=Potta+One&family=Shippori+Mincho&family=Yusei+Magic&family=Zen+Antique&family=Zhi+Mang+Xing&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: auto;
+        }
+
+        body {
+            background: url("hai.jpg");
+            background-size: cover;
+            font-family: 'Shippori Mincho', serif;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            background: rgb(246, 241, 223);
+            box-shadow: 0 -2px 2px rgb(188, 145, 145);
+            margin-top: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar ul li {
+
+            float: right;
+            width: 150px;
+            height: 50px;
+            background: rgb(152, 91, 152);
+            margin-right: 40px;
+            font-size: 14px;
+        }
+
+        .navbar ul li:hover {
+            color: rgb(245, 190, 170);
+            background: rgb(21, 84, 58);
+
+            animation: changeColor 2s infinite;
+            animation-delay: 3s;
+        }
+
+        @keyframes changColor {
+
+            0% {
+                background: rgb(244, 185, 185);
+            }
+
+            50% {
+                background: rgb(240, 222, 170);
+            }
+
+            100% {
+                background: rgb(167, 225, 177);
+            }
+
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgb(244, 200, 146);
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li ul li {
+            display: none;
+            width: 150px;
+            height: 50px;
+            float: initial;
+            background: rgba(rgb(159, 114, 114), rgb(122rgb(118, 118, 184)7, 122), rgb(167, 167, 213), alpha);
+            font-size: 10px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li:hover ul li {
+            display: block;
+            border-top: 1px solid rgb(243, 174, 149);
+
+        }
+    </style>
+
+
+
+
+</head>
+
+
+<body>
+
+
+    <canvas></canvas>
+
+
+    <div class="overlay">
+
+
+        <h1 class="title" style="color:cadetblue">玉舍文学村</h1>
+
+        <div class="navbar">
+
+            <ul class="firs-menu">
+
+
+                <li><a href="#"> 村民登入 </a>
+                    <ul class="second-menu">
+                        <li><a href="#">登录账号</a>
+                        </li>
+                        <li><a href="arata.html">新村民注册</a>
+                        </li>
+                        <li><a href="#">找回账号</a>
+                        </li>
+                        <li><a href="#">找回密码</a>
+                        </li>
+                </li>
+            </ul>
+
+
+            <li><a href="#">村人一览</a>
+                <ul class="second-menu">
+                    <li><a href="suli.html">素栗</a>
+                    </li>
+                    <li><a href="rina.html">rina噗</a>
+                    </li>
+            </li>
+
+
+            </ul>
+        </div><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="search-box" id="azhen1">
+
+            <input class="search-txt" type="text" name="" placeholder="点我搜索～">
+            <a class="search-btn" href="#"> </a>
+
+        </div>
+
+
+
+
+
+        <!-- <img src="anime1.jpg" width="400" id="nan"> -->
+
+        <div class="container" id="azhen3">
+            <div class="panel active" style="background-image:url(zhuanlan1.jpeg)">
+                <h2 id="azhen4">中华BL</h3>
+                    <table style="border:8px solid rgb(233, 238, 239);width:10%">
+                        <h2 class="title" id="myp6"></h2>
+
+                        <tr>
+                            <th> 书名 </th>
+                        </tr>
+                        <tr>
+                            <th> 作者</th>
+                        </tr>
+                        <tr>
+                            <th> 点击数</th>
+
+                        </tr>
+                    </table>
+            </div>
+
+            <div class="panel" style="background-image:url(zhuanlan2.jpeg)">
+                <h2 id="azhen4">土狗</h3>
+
+            </div>
+
+            <div class="panel" style="background-image:url(lan3.jpg)">
+                <h2 id="azhen4">宅斗</h3>
+
+            </div>
+
+            <div class="panel" style="background-image:url(lan4.jpg)">
+                <h2 id="azhen4">凤栖</h3>
+            </div>
+        </div>
+        <script src="azhen.js">
+
+
+        </script>
+
+
+
+        <div>
+            <p id="quan">欢迎来到玉舍村</p>
+            <button id="button1">收藏首页 </button>
+            <button id="button2">下载app </button>
+            <button id="button3">退出 </button>
+        </div>
+
+        <img src="pic11.jpg" width="300" id="img">
+
+        <br><br>
+        <h3>
+            Copyright By 玉舍文学村 www.jjwxc.net All rights reserved
+        </h3>
+
+        <script>
+
+            // document.getElementById("quan").innerHTML = "咱就是一个大震惊";
+
+            document.getElementById("button3").addEventListener("click", function () {
+
+                document.getElementById("quan").innerHTML = "欢迎来到玉舍村";
+                window.alert("你敢点？？？！");
+
+            });
+
+            document.getElementById("button1").addEventListener("click", function () {
+
+                document.getElementById("quan").innerHTML = "欢迎来到玉舍村";
+                window.alert("收藏成功！");
+
+            });
+
+            document.getElementById("button2").addEventListener("click", function () {
+
+                document.getElementById("quan").innerHTML = "欢迎来到玉舍村";
+                window.alert("骚凹瑞俺们还木有app");
+
+            });
+
+
+
+        </script>
+        <br><br><br><br><br><br><br>
+
+
+    </div>
+
+
+
+
+</body>
+
+<script src="never.js"></script>
+
+</html>

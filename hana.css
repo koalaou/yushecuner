@@ -1,0 +1,168 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url(./image/bg1.jpg);
+    background-size: cover;
+    overflow: hidden; */
+    position: relative;
+
+}
+
+.overlay{
+
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:1;
+    overflow-y:auto;
+    padding: 25px 0;
+
+    background:transparent;
+
+}
+
+
+#azhen1{
+   margin:1;
+   padding:0;
+   background-color: rgb(217, 232, 227);
+}
+
+.search-box{
+    position:absolute;
+    top: 12%;
+    left: 40%;
+    transform: translate(-60%,-50);
+    background-color: darkgoldenrod;
+}
+
+
+#azhen2{
+    position:absolute;
+    top: 10%;
+    left: 80%;
+
+}
+
+#quan{
+    position:absolute;
+    top: 2%;
+    left: 85%;
+
+}
+
+
+
+#button1{
+    position:absolute;
+    top: 6%;
+    left: 85%;
+
+}
+
+#button2{
+    position:absolute;
+    top: 6%;
+    left: 90%;
+
+}
+
+#button3{
+    position:absolute;
+    top: 6%;
+    left: 95%;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+#azhen3{
+
+   
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    overflow:hidden;
+    margin:0;
+
+
+}
+
+
+#azhen4{
+
+    position:absolute;
+    top: 10%;
+    left: 55%;
+
+}
+
+.container{
+
+    display:flex;
+    width: 100vw;
+}
+
+.panel{
+
+    /* //跟封面一样大小 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    border-radius: 70px;
+    color: rgb(239, 243, 244);
+    cursor:pointer;
+    flex:0.5;
+    margin: 5px;
+    position:relative;
+    -webkit-transition: all 600ms ease-in;
+    
+}
+
+.panel h3{
+
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left:30px;
+    margin: 0;
+    opacity:100;
+    
+}
+
+.panel.active{
+
+    flex:5;
+
+}
+
+.panel.active h3{
+
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+
+}
+
+@media(max-width:400px){
+
+    .container{
+        width:100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+    display:none;
+}
+
+}
+
+

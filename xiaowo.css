@@ -1,0 +1,83 @@
+#quannan{
+    margin: 0;
+    padding: auto;
+}
+
+
+body {
+    background: url("hai.jpg");
+    background-size: cover;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background: rgb(246, 241, 223);
+    box-shadow: 0 -2px 2px rgb(188, 145, 145);
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    float: left;
+    width: 150px;
+    height: 50px;
+    background: rgb(152, 91, 152);
+    margin-right: 2px;
+    font-size: 14px;
+}
+
+.navbar ul li:hover {
+    color: rgb(245, 190, 170);
+    background: rgb(21, 84, 58);
+
+    animation: changeColor 2s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes changColor {
+
+    0% {
+        background: rgb(244, 185, 185);
+    }
+
+    50% {
+        background: rgb(240, 222, 170);
+    }
+
+    100% {
+        background: rgb(167, 225, 177);
+    }
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(244, 200, 146);
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul li ul li {
+    display: none;
+    width: 150px;
+    height: 50px;
+    float: initial;
+    background: rgba(rgb(159, 114, 114), rgb(122rgb(118, 118, 184)7, 122), rgb(167, 167, 213), alpha);
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover ul li {
+    display: block;
+    border-top: 1px solid rgb(243, 174, 149);
+
+}
